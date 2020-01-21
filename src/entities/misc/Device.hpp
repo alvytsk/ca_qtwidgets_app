@@ -1,14 +1,14 @@
 #pragma once
 
-#include "misc/Nameable.hpp"
+#include "Nameable.hpp"
 
 namespace entities
 {
 
-class Device1 : public Nameable
+class Device : public Nameable
 {
 public:
-  Device1(const std::string &name);
+  Device(const std::string &name) : Nameable(name) {}
 
   bool status() { return m_status; }
   void setStatus(bool status) { m_status = status; }

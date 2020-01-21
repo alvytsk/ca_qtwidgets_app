@@ -2,7 +2,8 @@
   "devices": [
     {
       "id": 1,
-      "name": "Device 1"
+      "name": "Device 1",
+      "status": "normal"
     }
   ]
 }
