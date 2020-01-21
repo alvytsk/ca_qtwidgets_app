@@ -10,11 +10,11 @@ class Device1 : public Nameable
 public:
   Device1(const std::string &name);
 
-  bool status() { return _status; }
-  void setStatus(bool status) { _status = status; }
+  bool status() { return m_status; }
+  void setStatus(bool status) { m_status = status; }
 
 private:
-  bool _status{false};
+  bool m_status{false};
 };
 
 } // namespace entities
