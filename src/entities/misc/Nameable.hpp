@@ -2,6 +2,9 @@
 
 #include <string>
 
+namespace entities
+{
+
 class Nameable
 {
 public:
@@ -18,3 +21,5 @@ public:
 private:
   const std::string m_name;
 };
+
+} // namespace entities

@@ -1,8 +1,4 @@
-
-// provides unit testing infrastructure
 #include "gtest/gtest.h"
-
-// provides add_integers, subtract_integers
 #include "Device.hpp"
 
 std::unique_ptr<entities::Device> dev(new entities::Device("Name 1"));
@@ -14,5 +10,9 @@ TEST(Device, Name)
 
 TEST(Device, Status)
 {
+  dev->setStatus(false);
   ASSERT_FALSE(dev->status());
+
+  dev->setStatus(true);
+  ASSERT_TRUE(dev->status());
 }
