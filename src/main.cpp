@@ -10,6 +10,7 @@ int main(void)
 
   Device *dev = new Device("Device 1");
   std::cout << dev->name() << " \nStatus: " << dev->status() << std::endl;
+  delete dev;
 
   return 0;
 }

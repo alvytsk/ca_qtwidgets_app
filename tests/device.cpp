@@ -5,7 +5,7 @@
 // provides add_integers, subtract_integers
 #include "Device.hpp"
 
-entities::Device *dev = new entities::Device("Name 1");
+std::unique_ptr<entities::Device> dev(new entities::Device("Name 1"));
 
 TEST(Device, Name)
 {
