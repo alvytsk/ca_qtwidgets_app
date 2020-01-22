@@ -1,5 +1,7 @@
 #pragma oncce
 
+//based on http://schneegans.github.io/tutorials/2015/09/21/properties
+
 namespace entities
 {
 
@@ -18,6 +20,13 @@ public:
   }
 
   virtual T const &get() { return m_value; }
+
+  //A& operator=(const A& value);
+  virtual Property<T> &operator=(T const &newValue)
+  {
+    set(newValue);
+    return *this;
+  }
 
 private:
   T m_value;
