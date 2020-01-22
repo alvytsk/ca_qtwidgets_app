@@ -17,6 +17,7 @@ if(ENABLE_UNIT_TESTS)
     unit_tests
     PRIVATE
       device.cpp
+      property.cpp
       main.cpp
     )
 

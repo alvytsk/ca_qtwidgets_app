@@ -7,7 +7,7 @@ template <typename T>
 class Property
 {
 public:
-  Property(T const &value) : m_value(value);
+  Property(T const &value) : m_value(value) {}
 
   virtual void set(T const &value)
   {
