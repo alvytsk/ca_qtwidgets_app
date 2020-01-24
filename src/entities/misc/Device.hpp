@@ -10,7 +10,7 @@ class Device : public Nameable,
                public Statusable
 {
 public:
-  Device(const std::string &name, bool status = false) : Nameable(name), Statusable(status) {}
+  Device(const std::string &name = "", Status status = Status::Undefined) : Nameable(name), Statusable(status) {}
 
 private:
 };

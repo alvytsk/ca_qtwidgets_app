@@ -1,24 +1,26 @@
 #pragma once
 
+#include "Status.hpp"
+
 namespace entities
 {
 
 class Statusable
 {
 public:
-  Statusable(bool status) : m_status(status)
+  Statusable(Status status) : m_status(status)
   {
   }
 
-  bool const &status() { return m_status; }
-  void setStatus(bool status)
+  Status const &status() { return m_status; }
+  void setStatus(Status status)
   {
     if (m_status != status)
       m_status = status;
   }
 
 private:
-  bool m_status{false};
+  Status m_status{Status::Undefined};
 };
 
 } // namespace entities
